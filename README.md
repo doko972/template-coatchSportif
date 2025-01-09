@@ -58,56 +58,135 @@ npm run build
 
 ## Structure du Projet
 ## Template2/
-### ├── app/                # Contient le code applicatif
-### ├── bootstrap/          # Fichiers de démarrage
-### ├── config/             # Fichiers de configuration
-### ├── database/           # Migrations et seeds
-### ├── public/             # Fichiers accessibles publiquement (assets, index.php)
-## Structure du projet
 
-- `resources/` : Contient les vues et les assets bruts.
-  - `css/`
-  - `images/`
-  - `js/` :
-    - `app.js`
-    - `backToTop.js`
-    - `bootstrap.js`
-    - `services.js`
-    - `toggleMenu.js`
-  - `sass/` :
-    - `components/` :
-      - `_backToTop.scss`
-      - `_footer.scss`
-      - `_header.scss`
-      - `_hero.scss`
-      - `_navbar.scss`
-      - `_reset.scss`
-      - `_services.scss`
-      - `_team.scss`
-      - `_variables.scss`
-    - `app.scss`
-  - `views/` :
-    - `layouts/` :
-      - `app.blade.php`
-    - `partials/` :
-      - `_footer.blade.php`
-      - `_header.blade.php`
-    - `sections/` :
-      - `_hero.blade.php`
-      - `_services.blade.php`
-      - `_team.blade.php`
-      - `home.blade.php`
-      - `welcome.blade.php`
+## Racine du projet
+- **`app/`** : Contient le code applicatif.
+- **`bootstrap/`** : Fichiers de démarrage de l'application.
+- **`config/`** : Fichiers de configuration pour Laravel.
+- **`database/`** : Contient les migrations et les seeds pour la base de données.
+- **`public/`** : Fichiers accessibles publiquement (ex. `index.php`, images, styles).
+- **`routes/`** : Définitions des routes de l'application.
+- **`storage/`** : Logs, cache et autres fichiers générés par Laravel.
+- **`tests/`** : Tests unitaires et fonctionnels pour l'application.
+- **`artisan`** : Interface en ligne de commande de Laravel.
+- **`.env.example`** : Exemple de fichier d'environnement pour configurer le projet.
+- **`composer.json`** : Dépendances PHP et informations du projet.
+- **`package.json`** : Dépendances JavaScript et scripts.
+- **`phpunit.xml`** : Configuration des tests PHPUnit.
+- **`README.md`** : Documentation du projet.
 
-### ├── routes/             # Définitions des routes
-### ├── storage/            # Logs, cache et autres fichiers générés
-### ├── tests/              # Tests unitaires et fonctionnels
-### ├── .env.example        # Exemple de fichier d'environnement
-### ├── artisan             # Interface en ligne de commande de Laravel
-### ├── composer.json       # Dépendances PHP et informations du projet
-### ├── package.json        # Dépendances JavaScript et scripts
-### ├── phpunit.xml         # Configuration des tests PHPUnit
-### └── README.md           # Ce fichier
+---
+
+## Structure des dossiers spécifiques
+
+### **`resources/`**
+Contient les vues et les assets bruts du projet.
+
+- **`css/`** : Feuilles de styles compilées.
+- **`images/`** : Images utilisées dans le projet.
+- **`js/`** : Fichiers JavaScript.
+  - `app.js`
+  - `backToTop.js`
+  - `bootstrap.js`
+  - `services.js`
+  - `toggleMenu.js`
+- **`sass/`** : Fichiers SASS pour les styles.
+  - **`components/`** : Styles des composants.
+    - `_backToTop.scss`
+    - `_footer.scss`
+    - `_header.scss`
+    - `_hero.scss`
+    - `_navbar.scss`
+    - `_reset.scss`
+    - `_services.scss`
+    - `_team.scss`
+    - `_variables.scss`
+  - `app.scss` : Point d'entrée principal pour les styles SASS.
+- **`views/`** : Vues Blade utilisées par Laravel.
+  - **`layouts/`** : Layout principal du projet.
+    - `app.blade.php`
+  - **`partials/`** : Sections communes à plusieurs pages.
+    - `_footer.blade.php`
+    - `_header.blade.php`
+  - **`sections/`** : Sections spécifiques aux pages.
+    - `_hero.blade.php`
+    - `_services.blade.php`
+    - `_team.blade.php`
+    - `home.blade.php`
+    - `welcome.blade.php`
+
+---
+
+### Autres dossiers et fichiers clés
+
+- **`routes/`** : Définitions des routes.
+  - `web.php` : Routes web accessibles via un navigateur.
+  - `api.php` : Routes pour les API.
+  - `console.php` : Commandes artisan personnalisées.
+  - `channels.php` : Définition des canaux de broadcast.
+
+- **`storage/`** :
+  - `app/` : Fichiers uploadés.
+  - `framework/` : Sessions, cache, et fichiers temporaires.
+  - `logs/` : Logs générés par Laravel.
+
+- **`tests/`** :
+  - `Feature/` : Tests fonctionnels pour des fonctionnalités complètes.
+  - `Unit/` : Tests unitaires pour des classes ou méthodes spécifiques.
+
+---
+
+### Exemple visuel de la hiérarchie
+
+```plaintext
+├── app/
+├── bootstrap/
+├── config/
+├── database/
+├── public/
+│   ├── css/
+│   ├── images/
+│   ├── js/
+│   └── index.php
+├── resources/
+│   ├── css/
+│   ├── images/
+│   ├── js/
+│   │   ├── app.js
+│   │   ├── backToTop.js
+│   │   ├── bootstrap.js
+│   │   ├── services.js
+│   │   └── toggleMenu.js
+│   ├── sass/
+│   │   ├── components/
+│   │   │   ├── _backToTop.scss
+│   │   │   ├── _footer.scss
+│   │   │   └── ...
+│   │   └── app.scss
+│   └── views/
+│       ├── layouts/
+│       │   └── app.blade.php
+│       ├── partials/
+│       │   ├── _footer.blade.php
+│       │   └── _header.blade.php
+│       ├── sections/
+│       │   ├── _hero.blade.php
+│       │   ├── _services.blade.php
+│       │   └── ...
+│       └── welcome.blade.php
+├── routes/
+│   ├── api.php
+│   ├── channels.php
+│   ├── console.php
+│   └── web.php
+├── storage/
+├── tests/
+├── .env.example
+├── artisan
+├── composer.json
+├── package.json
+├── phpunit.xml
+└── README.md
 
 # Commandes Utiles
 ## Lancer le serveur de développement :
