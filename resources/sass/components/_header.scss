@@ -1,0 +1,8 @@
+.header-container {
+    display: flex; /* Active Flexbox */
+    justify-content: space-between; /* Espace entre les éléments */
+    align-items: center; /* Centre verticalement */
+    padding: 15px; /* Espacement interne */
+    max-width: 1200px; /* Largeur maximale */
+    margin: 0 auto; /* Centre horizontalement */
+}
