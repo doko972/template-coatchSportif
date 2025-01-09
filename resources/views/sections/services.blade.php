@@ -1,4 +1,4 @@
-<section class="services-section">
+<section id="services" class="services-section">
     <div class="container">
         <h2>Nous fournissons des services de première classe</h2>
         <div class="tabs">

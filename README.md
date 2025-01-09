@@ -55,3 +55,72 @@ Pour une compilation optimisée en production :
 ```
 npm run build
 ```
+
+## Structure du Projet
+## Template2/
+### ├── app/                # Contient le code applicatif
+### ├── bootstrap/          # Fichiers de démarrage
+### ├── config/             # Fichiers de configuration
+### ├── database/           # Migrations et seeds
+### ├── public/             # Fichiers accessibles publiquement (assets, index.php)
+### ├── resources/          # Vues, assets bruts (SASS, images)
+### ├────── css/     
+### ├────── images/       
+### ├────── js/  
+### ├──────────── app.js
+### ├──────────── backToTop.js
+### ├──────────── bootstrap.js
+### ├──────────── services.js
+### ├──────────── toggleMenu.js
+### ├────── sass/  
+### ├──────────── componenents/  
+### ├──────────────── _backToTop.scss
+### ├──────────────── _footer.scss
+### ├──────────────── _header.scss
+### ├──────────────── _hero.scss
+### ├──────────────── _navbar.scss
+### ├──────────────── _reset.scss
+### ├──────────────── _services.scss
+### ├──────────────── _team.scss
+### ├──────────────── _variables.scss
+### ├──────────── app.scss/
+### ├────── views/ 
+### ├──────────── layouts/  
+### ├──────────────── app.blade.php
+### ├──────────── partials/ 
+### ├──────────────── _footer.blade.php
+### ├──────────────── _header.blade.php
+### ├──────────── sections/ 
+### ├──────────────── _hero.blade.php
+### ├──────────────── _services.blade.php
+### ├──────────────── _team.blade.php
+### ├──────────── sections/home.blade.php
+### ├──────────── sections/welcome.blade.php
+### ├── routes/             # Définitions des routes
+### ├── storage/            # Logs, cache et autres fichiers générés
+### ├── tests/              # Tests unitaires et fonctionnels
+### ├── .env.example        # Exemple de fichier d'environnement
+### ├── artisan             # Interface en ligne de commande de Laravel
+### ├── composer.json       # Dépendances PHP et informations du projet
+### ├── package.json        # Dépendances JavaScript et scripts
+### ├── phpunit.xml         # Configuration des tests PHPUnit
+### └── README.md           # Ce fichier
+
+# Commandes Utiles
+## Lancer le serveur de développement :
+```
+php artisan serve
+```
+## Exécuter les tests :
+```
+php artisan test
+```
+## Mettre à jour les dépendances :
+### Pour Composer :
+```
+composer update
+```
+### Pour NPM :
+```
+npm update
+```

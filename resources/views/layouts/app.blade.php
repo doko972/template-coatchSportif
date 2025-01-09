@@ -19,5 +19,10 @@
     <footer>
         @include('partials.footer')
     </footer>
+
+    <button id="backToTop" class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
 </body>
 </html>

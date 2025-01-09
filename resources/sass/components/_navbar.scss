@@ -44,7 +44,7 @@
     display: flex;
     flex-direction: column; /* Pour smartphone/tablette */
     position: absolute;
-    top: 100%;
+    top: 5%;
     right: 0;
     background: white;
     width: 100%;
@@ -76,6 +76,7 @@
     display: block;
     width: 25px;
     height: 3px;
+    margin-right: 20px;
     background: #333;
     transition: all 0.3s ease;
 }

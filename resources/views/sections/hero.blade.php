@@ -1,4 +1,4 @@
-<section class="barbers-hero">
+<section id="hero" class="barbers-hero">
     <div class="barbers-overlay">
         <div class="barbers-content">
             <h1>NOS BARBIERS</h1>

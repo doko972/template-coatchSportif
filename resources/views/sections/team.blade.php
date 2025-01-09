@@ -1,4 +1,4 @@
-<section class="barbers-section">
+<section id="team" class="barbers-section">
     <div class="container">
         <h2>NOUS POUVONS RENDRE VOTRE IMPRESSIONNANCE</h2>
         <h3>Barbiers super professionnels</h3>
