@@ -63,39 +63,42 @@ npm run build
 ### ├── config/             # Fichiers de configuration
 ### ├── database/           # Migrations et seeds
 ### ├── public/             # Fichiers accessibles publiquement (assets, index.php)
-### ├── resources/          # Vues, assets bruts (SASS, images)
-### ├────── css/     
-### ├────── images/       
-### ├────── js/  
-### ├──────────── app.js
-### ├──────────── backToTop.js
-### ├──────────── bootstrap.js
-### ├──────────── services.js
-### ├──────────── toggleMenu.js
-### ├────── sass/  
-### ├──────────── componenents/  
-### ├──────────────── _backToTop.scss
-### ├──────────────── _footer.scss
-### ├──────────────── _header.scss
-### ├──────────────── _hero.scss
-### ├──────────────── _navbar.scss
-### ├──────────────── _reset.scss
-### ├──────────────── _services.scss
-### ├──────────────── _team.scss
-### ├──────────────── _variables.scss
-### ├──────────── app.scss/
-### ├────── views/ 
-### ├──────────── layouts/  
-### ├──────────────── app.blade.php
-### ├──────────── partials/ 
-### ├──────────────── _footer.blade.php
-### ├──────────────── _header.blade.php
-### ├──────────── sections/ 
-### ├──────────────── _hero.blade.php
-### ├──────────────── _services.blade.php
-### ├──────────────── _team.blade.php
-### ├──────────── sections/home.blade.php
-### ├──────────── sections/welcome.blade.php
+## Structure du projet
+
+- `resources/` : Contient les vues et les assets bruts.
+  - `css/`
+  - `images/`
+  - `js/` :
+    - `app.js`
+    - `backToTop.js`
+    - `bootstrap.js`
+    - `services.js`
+    - `toggleMenu.js`
+  - `sass/` :
+    - `components/` :
+      - `_backToTop.scss`
+      - `_footer.scss`
+      - `_header.scss`
+      - `_hero.scss`
+      - `_navbar.scss`
+      - `_reset.scss`
+      - `_services.scss`
+      - `_team.scss`
+      - `_variables.scss`
+    - `app.scss`
+  - `views/` :
+    - `layouts/` :
+      - `app.blade.php`
+    - `partials/` :
+      - `_footer.blade.php`
+      - `_header.blade.php`
+    - `sections/` :
+      - `_hero.blade.php`
+      - `_services.blade.php`
+      - `_team.blade.php`
+      - `home.blade.php`
+      - `welcome.blade.php`
+
 ### ├── routes/             # Définitions des routes
 ### ├── storage/            # Logs, cache et autres fichiers générés
 ### ├── tests/              # Tests unitaires et fonctionnels
