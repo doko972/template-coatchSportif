@@ -8,8 +8,8 @@
     <nav class="nav">
         <ul class="nav-menu">
             <li><a href="#hero">Accueil</a></li>
-            <li><a href="#carousel">Carousel</a></li>
-            <li><a href="#gallery">Galerie</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#team">Equipe</a></li>
         </ul>
     </nav>
 </div>

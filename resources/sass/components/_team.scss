@@ -1,0 +1,93 @@
+/* Section Barbiers */
+.barbers-section {
+    background-color: #333;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.barbers-section h2 {
+    font-size: 1.5rem;
+    color: #aaa;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.barbers-section h3 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.barbers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.barber-card {
+    background: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.barber-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 15px;
+}
+
+.barber-info .role {
+    font-size: 0.9rem;
+    color: #4361ee;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.barber-info h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.cta-button {
+    background-color: #4361ee;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #364fc7;
+}
+
+/* Crédit image */
+.image-credit {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .barbers-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .barbers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
