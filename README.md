@@ -80,7 +80,6 @@ npm run build
 ## Structure des dossiers spécifiques
 
 ### **`resources/`**
-Contient les vues et les assets bruts du projet.
 
 - **`css/`** : Feuilles de styles compilées.
 - **`images/`** : Images utilisées dans le projet.
@@ -136,7 +135,7 @@ Contient les vues et les assets bruts du projet.
 
 ---
 
-### Exemple visuel de la hiérarchie
+### Hiérarchie
 
 ```plaintext
 ├── app/
@@ -161,18 +160,25 @@ Contient les vues et les assets bruts du projet.
 │   │   ├── components/
 │   │   │   ├── _backToTop.scss
 │   │   │   ├── _footer.scss
+│   │   │   ├── _header.scss
+│   │   │   ├── _hero.scss
+│   │   │   ├── _navbar.scss
+│   │   │   ├── _reset.scss
+│   │   │   ├── _services.scss
+│   │   │   ├── _team.scss
+│   │   │   ├── _variables.scss
 │   │   │   └── ...
 │   │   └── app.scss
 │   └── views/
 │       ├── layouts/
 │       │   └── app.blade.php
 │       ├── partials/
-│       │   ├── _footer.blade.php
-│       │   └── _header.blade.php
+│       │   ├── footer.blade.php
+│       │   └── header.blade.php
 │       ├── sections/
-│       │   ├── _hero.blade.php
-│       │   ├── _services.blade.php
-│       │   └── ...
+│       │   ├── hero.blade.php
+│       │   ├── services.blade.php
+│       │   └── team.blade.php
 │       └── welcome.blade.php
 ├── routes/
 │   ├── api.php
