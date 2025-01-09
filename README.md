@@ -64,7 +64,7 @@ npm run build
 ### ├── database/           # Migrations et seeds
 ### ├── public/             # Fichiers accessibles publiquement (assets, index.php)
 ### ├── resources/          # Vues, assets bruts (SASS, images)
-### ### ├── css/     
+###         ├── css/     
 ### ├────── images/       
 ### ├────── js/  
 ### ├──────────── app.js
