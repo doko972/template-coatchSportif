@@ -199,16 +199,11 @@ npm run build
 ```
 php artisan serve
 ```
-## Exécuter les tests :
+
 ```
-php artisan test
+npm run dev
 ```
-## Mettre à jour les dépendances :
-### Pour Composer :
+
 ```
-composer update
-```
-### Pour NPM :
-```
-npm update
+npm run build
 ```
