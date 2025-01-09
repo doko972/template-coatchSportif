@@ -105,12 +105,12 @@ npm run build
   - **`layouts/`** : Layout principal du projet.
     - `app.blade.php`
   - **`partials/`** : Sections communes à plusieurs pages.
-    - `_footer.blade.php`
-    - `_header.blade.php`
+    - `footer.blade.php`
+    - `header.blade.php`
   - **`sections/`** : Sections spécifiques aux pages.
-    - `_hero.blade.php`
-    - `_services.blade.php`
-    - `_team.blade.php`
+    - `hero.blade.php`
+    - `services.blade.php`
+    - `team.blade.php`
     - `home.blade.php`
     - `welcome.blade.php`
 
