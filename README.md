@@ -194,16 +194,3 @@ npm run build
 ├── phpunit.xml
 └── README.md
 
-# Commandes Utiles
-## Lancer le serveur de développement :
-```
-php artisan serve
-```
-
-```
-npm run dev
-```
-
-```
-npm run build
-```
