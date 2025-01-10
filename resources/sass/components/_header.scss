@@ -1,8 +1,27 @@
 .header-container {
-    display: flex; /* Active Flexbox */
-    justify-content: space-between; /* Espace entre les éléments */
-    align-items: center; /* Centre verticalement */
-    padding: 15px; /* Espacement interne */
-    max-width: 1200px; /* Largeur maximale */
-    margin: 0 auto; /* Centre horizontalement */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    max-width: 1200px;
+    color: white;
+    margin: 0 auto;
+    position: absolute; /* Rend le header superposé */
+    top: 0; /* Colle le header en haut */
+    left: 0;
+    right: 0;
+    z-index: 10; /* Assure que le header est au-dessus du fond */
+    background: transparent; /* Rend le header transparent */
 }
+
+.nav-menu li {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-menu:hover {
+        color: #00d4ff;
+    }
+

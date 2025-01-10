@@ -4,7 +4,7 @@
 
 @section('content')
     @include('sections.hero')
-    @include('sections.team')
     @include('sections.services')
+    @include('sections.whyChooseUs')
 
 @endsection
