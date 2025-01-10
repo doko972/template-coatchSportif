@@ -34,7 +34,12 @@ composer install
 npm install
 ```
 
-4. Configurer le fichier d'environnement :
+4. Installer les dépendances JavaScript avec NPM :
+```
+npm install sass --save-dev
+```
+
+5. Configurer le fichier d'environnement :
 Copiez le fichier .env.example en .env et modifiez-le selon vos besoins :
 ```
 cp .env.example .env
@@ -45,7 +50,7 @@ Générez la clé de l'application Laravel :
 php artisan key:generate
 ```
 
-5. Compiler les assets :
+6. Compiler les assets :
 Pour compiler les fichiers CSS et JavaScript :
 ```
 npm run dev
