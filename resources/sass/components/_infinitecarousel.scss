@@ -1,0 +1,81 @@
+/* Carousel Container */
+.infinite-carousel {
+    overflow: hidden; /* Cache les parties en dehors du conteneur */
+    background-color: #f0f4ff;
+    padding: 20px 0;
+    position: relative;
+    background: url("../images/2.jpg") no-repeat center center/cover; /* Image de fond */
+    z-index: 0;
+}
+
+/* Track */
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    animation: scroll-left 15s linear infinite; /* Animation continue */
+}
+
+/* Carousel Items */
+.carousel-item {
+    min-width: 300px;
+    max-width: 360px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease;
+}
+
+.carousel-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.carousel-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.carousel-item p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.carousel-item .stars {
+    color: #ffa500; /* Couleur des étoiles */
+    font-size: 1rem;
+}
+
+/* Hover Effect */
+.carousel-item:hover {
+    transform: scale(1.05);
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    cursor: grab; /* Indique à l'utilisateur qu'il peut faire glisser */
+    animation: scroll-left 15s linear infinite; /* Animation continue */
+    transition: transform 0.3s ease-out; /* Transition fluide pour le glisser-déposer */
+}
+
+.carousel-track:active {
+    cursor: grabbing; /* Change le curseur pendant le glisser */
+    animation: none; /* Stoppe l'animation pendant le glisser */
+}
+
+/* Animation */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

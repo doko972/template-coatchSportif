@@ -10,6 +10,8 @@
             <li><a href="#hero">Accueil</a></li>
             <li><a href="#services">services</a></li>
             <li><a href="#team">Equipe</a></li>
+            <li><a href="#why-choose-us">Pourquoi nous</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 </div>

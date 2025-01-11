@@ -1,63 +1,20 @@
-<section id="team" class="barbers-section">
-    <div class="container">
-        <h2>NOUS POUVONS RENDRE VOTRE IMPRESSIONNANCE</h2>
-        <h3>Barbiers super professionnels</h3>
-        <div class="barbers-grid">
-            <!-- Carte 1 -->
-            <div class="barber-card">
-                <img src="https://via.placeholder.com/300x300" alt="Fred Morrison">
-                <div class="barber-info">
-                    <span class="role">Propriétaire</span>
-                    <h4>Fred Morrison</h4>
-                    <a href="#contact" class="cta-button">PRENDRE RENDEZ-VOUS</a>
-                </div>
-            </div>
-            <!-- Carte 2 -->
-            <div class="barber-card">
-                <img src="https://via.placeholder.com/300x300" alt="Adrian Gronder">
-                <div class="barber-info">
-                    <span class="role">Coiffeur / Styliste</span>
-                    <h4>Adrian Gronder</h4>
-                    <a href="#contact" class="cta-button">PRENDRE RENDEZ-VOUS</a>
-                </div>
-            </div>
-            <!-- Carte 3 -->
-            <div class="barber-card">
-                <img src="https://via.placeholder.com/300x300" alt="Elmer Briggs">
-                <div class="barber-info">
-                    <span class="role">Coiffeur / Styliste</span>
-                    <h4>Elmer Briggs</h4>
-                    <a href="#contact" class="cta-button">PRENDRE RENDEZ-VOUS</a>
-                </div>
-            </div>
-                        <!-- Carte 1 -->
-                        <div class="barber-card">
-                <img src="https://via.placeholder.com/300x300" alt="Fred Morrison">
-                <div class="barber-info">
-                    <span class="role">Propriétaire</span>
-                    <h4>Fred Morrison</h4>
-                    <a href="#contact" class="cta-button">PRENDRE RENDEZ-VOUS</a>
-                </div>
-            </div>
-            <!-- Carte 2 -->
-            <div class="barber-card">
-                <img src="https://via.placeholder.com/300x300" alt="Adrian Gronder">
-                <div class="barber-info">
-                    <span class="role">Coiffeur / Styliste</span>
-                    <h4>Adrian Gronder</h4>
-                    <a href="#contact" class="cta-button">PRENDRE RENDEZ-VOUS</a>
-                </div>
-            </div>
-            <!-- Carte 3 -->
-            <div class="barber-card">
-                <img src="https://via.placeholder.com/300x300" alt="Elmer Briggs">
-                <div class="barber-info">
-                    <span class="role">Coiffeur / Styliste</span>
-                    <h4>Elmer Briggs</h4>
-                    <a href="#contact" class="cta-button">PRENDRE RENDEZ-VOUS</a>
-                </div>
-            </div>
+<section id="coaches" class="coaches">
+    <h2>LES COACHS</h2>
+    <div class="coaches-container">
+        <div class="coach-card">
+            <img src="./images/4.jpg" alt="Coach 1">
+            <h3>Nom Prénom</h3>
+            <p>Coach Physique</p>
         </div>
-        <p class="image-credit">Image Credit</p>
+        <div class="coach-card">
+            <img src="./images/5.jpg" alt="Coach 2">
+            <h3>Nom Prénom</h3>
+            <p>Coach Physique</p>
+        </div>
+        <div class="coach-card">
+            <img src="./images/6.jpg" alt="Coach 3">
+            <h3>Nom Prénom</h3>
+            <p>Coach Physique</p>
+        </div>
     </div>
 </section>
