@@ -73,7 +73,7 @@
                     background: var(--background-color-1);
                     color: var(--primary-color);
                     transform: scale(1.05);
-                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+                    box-shadow: 0px 4px 10px var(--shadowBox-5);
                 }
             }
         }
@@ -94,13 +94,12 @@
                 right: -5%;
                 width: 150px;
                 height: 200px;
-                background: #007bffb4;
+                background: var(--background-color-deg);
                 border-radius: 20px;
             }
         }
     }
 
-    /* Afficher le premier container par défaut */
     .why-container:first-child {
         display: flex;
     }

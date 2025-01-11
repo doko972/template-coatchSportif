@@ -1,6 +1,4 @@
-/* Navbar Styles */
 .header {
-    // background: #f8f9fa;
     padding: 15px 0;
     position: relative;
 }
@@ -8,11 +6,11 @@
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #ffffff;
+    color: var(--secondary-color);
 }
 
 .nav {
-    display: flex; /* Toujours visible sur desktop */
+    display: flex;
     list-style: none;
     gap: 15px;
     align-items: center;
@@ -26,29 +24,28 @@
 
 .nav ul li a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--secondary-color);
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .nav ul li a:hover {
-    color: #007bff;
+    color: var(--primary-color);
 }
 
-/* Responsive Menu */
 .nav {
-    display: flex; /* Fixe l'affichage pour desktop */
+    display: flex;
 }
 
 .nav.open {
     display: flex;
-    flex-direction: column; /* Pour smartphone/tablette */
+    flex-direction: column;
     position: absolute;
     top: 100%;
     right: 0;
     background: #007bff;
     width: 100%;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px var(--shadowBox-2);
     border-radius: 8px;
     padding: 1rem;
     z-index: 10;
@@ -61,9 +58,8 @@
     display: flex;
 }
 
-/* Burger Button */
 .navbar-toggler {
-    display: none; /* Cacher sur desktop */
+    display: none;
     flex-direction: column;
     gap: 5px;
     background: none;
@@ -77,7 +73,7 @@
     width: 25px;
     height: 3px;
     margin-right: 20px;
-    background: #ffffff;
+    background: var(--background-color-1);
     transition: all 0.3s ease;
 }
 
@@ -94,31 +90,30 @@
     transform: rotate(-45deg) translateY(-6px);
 }
 
-/* Media Query for Tablet and Smartphone */
 @media (max-width: 768px) {
     .navbar-toggler {
         display: flex;
     }
 
     .nav {
-        display: none; /* Masquer par défaut sur mobile */
+        display: none;
     }
 
     .nav.open {
-        display: flex; /* Affiche uniquement lorsque ouvert */
-        background-color: #ffffff;
+        display: flex;
+        background-color: var(--shadowBox-6);
     }
     .nav-menu {
         flex-direction: column;
     }
     .nav ul li a {
         text-decoration: none;
-        color: #007bff;
+        color: var(--primary-color);
         font-weight: bold;
         transition: color 0.3s ease;
     }
 
     .nav ul li a:hover {
-        color: #007bff;
+        color: var(--secondary-color);
     }
 }

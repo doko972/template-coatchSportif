@@ -3,15 +3,16 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    max-width: 1200px;
-    color: white;
+    color: var(--secondary-color);
     margin: 0 auto;
-    position: absolute; /* Rend le header superposé */
-    top: 0; /* Colle le header en haut */
+    position: fixed;
+    top: 0;
     left: 0;
     right: 0;
-    z-index: 10; /* Assure que le header est au-dessus du fond */
-    background: transparent; /* Rend le header transparent */
+    z-index: 10;
+    background: var(--shadowBox-6);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 6px var(--shadowBox-2);
 }
 
 .nav-menu li {
@@ -21,7 +22,6 @@
     transition: color 0.3s ease;
 }
 
-.nav-menu:hover {
-        color: #00d4ff;
-    }
-
+.nav-menu li:hover {
+    color: var(--primary-color);
+}

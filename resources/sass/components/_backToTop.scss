@@ -2,8 +2,8 @@
     position: fixed;
     bottom: 100px;
     right: 20px;
-    background-color: #4361ee;
-    color: white;
+    background-color: var(--background-color-2);
+    color: var(--secondary-color);
     border: none;
     border-radius: 50%;
     width: 50px;
@@ -13,7 +13,7 @@
     justify-content: center;
     font-size: 1.5rem;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px var(--shadowBox-2);
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -21,7 +21,7 @@
 }
 
 .back-to-top:hover {
-    background-color: #364fc7;
+    background-color: var(--background-color-2);
 }
 
 .back-to-top.show {

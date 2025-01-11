@@ -1,7 +1,7 @@
 <section id="contact" class="contact">
     <div class="contact-container">
         <div class="contact-form">
-            <h2>DEVIENT MEILLEUR</h2>
+            <h2>DEVENEZ MEILLEUR</h2>
             <h3>CONTACTEZ-NOUS</h3>
             <form action="#" method="post">
                 <input type="text" name="name" placeholder="Nom" required />

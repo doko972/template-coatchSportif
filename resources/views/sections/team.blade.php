@@ -1,4 +1,4 @@
-<section id="coaches" class="coaches">
+<section id="team" class="coaches">
     <h2>LES COACHS</h2>
     <div class="coaches-container">
         <div class="coach-card">
